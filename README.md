@@ -9,7 +9,7 @@ http://www.youtube.com/watch?v=LvcJ70F9DSM&feature=youtu.be
 
 ## Usage
 
-Show `example/app.js`
+See `example/app.js`
 
 ## Feature
 
