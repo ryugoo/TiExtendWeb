@@ -26,4 +26,17 @@
     }
 }
 
+- (void)setRemoveShadow_:(id)args
+{
+    BOOL removeFlag = [TiUtils boolValue:args def:NO];
+    if (removeFlag == YES)
+    {
+        for (UIView *shadowView in [[self scrollview] subviews]) {
+            if ([shadowView isKindOfClass:[UIImageView class]]) {
+                [shadowView setHidden:YES];
+            }
+        }
+    }
+}
+
 @end

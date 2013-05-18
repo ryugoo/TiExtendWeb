@@ -15,7 +15,8 @@ var win = Ti.UI.createWindow({
 });
 var web = Ti.UI.createWebView({
     url: "http://blog.imthinker.net/",
-    normalScrollSpeed: true
+    normalScrollSpeed: true,
+    removeShadow: true
 });
 win.add(web);
 var tab = Ti.UI.createTab({
@@ -31,7 +32,8 @@ var win2 = Ti.UI.createWindow({
 });
 var web2 = Ti.UI.createWebView({
     url: "http://blog.imthinker.net/",
-    normalScrollSpeed: false
+    normalScrollSpeed: false,
+    removeShadow: false
 });
 win2.add(web2);
 var tab2 = Ti.UI.createTab({

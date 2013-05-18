@@ -3,6 +3,8 @@ TiExtendWeb module for iPhone
 
 http://www.youtube.com/watch?v=LvcJ70F9DSM&feature=youtu.be
 
+![image](tiextendweb.png)
+
 **This module is no support.**
 
 ## Usage
@@ -12,10 +14,12 @@ Show `example/app.js`
 ## Feature
 
 * Custom WebView scroll speed (Same TableView / ScrollView scroll speed)
+* Remove scroll bounce shadow
 
 ```
 var webView = Ti.UI.createWebView({
-    normalScrollSpeed: true
+    normalScrollSpeed: true,
+    removeShadow: true
 });
 ```
 
