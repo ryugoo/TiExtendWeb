@@ -42,4 +42,24 @@ var tab2 = Ti.UI.createTab({
 });
 tabGroup.addTab(tab2);
 
+// Tab 3
+var win3 = Ti.UI.createWindow({
+    backgroundColor: "#FFFFFF",
+    title: "Native"
+});
+var web3 = Ti.UI.createWebView({
+    url: "index.html",
+    normalScrollSpeed: true,
+    removeShadow: true
+});
+web3.addEventListener('fromWebView', function () {
+    alert('Firing from WebView');
+});
+win3.add(web3);
+var tab3 = Ti.UI.createTab({
+    window: win3,
+    title: "Native"
+});
+tabGroup.addTab(tab3);
+
 tabGroup.open();
