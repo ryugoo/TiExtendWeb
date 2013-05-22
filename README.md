@@ -23,7 +23,7 @@ var webView = Ti.UI.createWebView({
     removeShadow: true,
     url: 'index.html'
 });
-webview.addEventListener('fromWebView', function () {
+webView.addEventListener('fromWebView', function () {
     alert('Firing from WebView!');
 });
 ```
