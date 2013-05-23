@@ -36,6 +36,15 @@
     }
 }
 
+- (void)setRemoveScrollDelay_:(id)args
+{
+    BOOL removeFlag = [TiUtils boolValue:args def:NO];
+    if (removeFlag == YES)
+    {
+        [[self scrollview] setDelaysContentTouches:NO];
+    }
+}
+
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     // Get request URL

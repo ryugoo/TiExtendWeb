@@ -16,7 +16,8 @@ var win = Ti.UI.createWindow({
 var web = Ti.UI.createWebView({
     url: "http://blog.imthinker.net/",
     normalScrollSpeed: true,
-    removeShadow: true
+    removeShadow: true,
+    removeScrollDelay: true
 });
 win.add(web);
 var tab = Ti.UI.createTab({
@@ -50,7 +51,8 @@ var win3 = Ti.UI.createWindow({
 var web3 = Ti.UI.createWebView({
     url: "index.html",
     normalScrollSpeed: true,
-    removeShadow: true
+    removeShadow: true,
+    removeScrollDelay: true
 });
 web3.addEventListener('fromWebView', function () {
     alert('Firing from WebView');
