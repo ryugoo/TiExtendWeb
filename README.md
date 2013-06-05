@@ -17,12 +17,14 @@ See `example/app.js`
 * Remove scroll bounce shadow
 * Remove scroll delay
 * Communication between WebView and Titanium app (Code base is [TiCordova](https://github.com/yagitoshiro/TiCordova))
+* Change UserAgent (Only **createWebView**)
 
 ```javascript
 var webView = Ti.UI.createWebView({
     normalScrollSpeed: true,
     removeShadow: true,
     removeScrollDelay: true,
+    userAgentForiOS: 'My Awesome Application UserAgent'
     url: 'index.html'
 });
 webView.addEventListener('fromWebView', function () {

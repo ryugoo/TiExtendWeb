@@ -45,6 +45,12 @@
     }
 }
 
+- (void)setUserAgentForiOS_:(id)args
+{
+    NSDictionary *dict = @{@"UserAgent": args};
+    [[NSUserDefaults standardUserDefaults] registerDefaults:dict];
+}
+
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     // Get request URL
