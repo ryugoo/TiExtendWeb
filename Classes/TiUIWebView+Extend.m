@@ -7,6 +7,7 @@
 //
 
 #import "TiUIWebView+Extend.h"
+#import "TiUIWebViewProxy.h"
 #import "TiUtils.h"
 
 @implementation TiUIWebView (TiUIWebView_Extend)
@@ -14,21 +15,23 @@
 - (void)setNormalScrollSpeed_:(id)args
 {
     BOOL normalSpeed = [TiUtils boolValue:args def:NO];
+    UIScrollView *scrollView = [self performSelector:@selector(scrollview) withObject:nil];
     if (normalSpeed == YES) {
         // Same TableView, ScrollView scroll speed.
-        [[self scrollview] setDecelerationRate:UIScrollViewDecelerationRateNormal];
+        [scrollView setDecelerationRate:UIScrollViewDecelerationRateNormal];
     } else {
         // Default scroll speed.
-        [[self scrollview] setDecelerationRate:UIScrollViewDecelerationRateFast];
+        [scrollView setDecelerationRate:UIScrollViewDecelerationRateFast];
     }
 }
 
 - (void)setRemoveShadow_:(id)args
 {
     BOOL removeFlag = [TiUtils boolValue:args def:NO];
+    UIScrollView *scrollView = [self performSelector:@selector(scrollview) withObject:nil];
     if (removeFlag == YES)
     {
-        for (UIView *shadowView in [[self scrollview] subviews]) {
+        for (UIView *shadowView in [scrollView subviews]) {
             if ([shadowView isKindOfClass:[UIImageView class]]) {
                 [shadowView setHidden:YES];
             }
@@ -39,9 +42,10 @@
 - (void)setRemoveScrollDelay_:(id)args
 {
     BOOL removeFlag = [TiUtils boolValue:args def:NO];
+    UIScrollView *scrollView = [self performSelector:@selector(scrollview) withObject:nil];
     if (removeFlag == YES)
     {
-        [[self scrollview] setDelaysContentTouches:NO];
+        [scrollView setDelaysContentTouches:NO];
     }
 }
 
@@ -54,11 +58,11 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     // Get request URL
-    NSURL *url = [request URL];
+    NSURL *requestURL = [request URL];
     // Get scheme information
-    NSString *scheme = [[url scheme] lowercaseString];
+    NSString *scheme = [[requestURL scheme] lowercaseString];
     // Get URL path information
-    NSString *path = [url path];
+    NSString *path = [requestURL path];
     // If the path begins with "/"
     if([path hasPrefix:@"/"]) {
         // Remove the head of the "/"
@@ -67,7 +71,7 @@
     // If the scheme begins with "extendwebview"
     if ([scheme isEqualToString:@"extendwebview"]) {
         // Get event name from host
-        NSString *eventName = [url host];
+        NSString *eventName = [requestURL host];
         // The same as the event name if it has been registered in the event listener
         if ([self.proxy _hasListeners:eventName]){
             NSLog(@"[DEBUG] fire: %@",eventName);

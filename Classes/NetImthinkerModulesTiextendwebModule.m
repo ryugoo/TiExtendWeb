@@ -51,7 +51,7 @@
 -(void)dealloc
 {
 	// release any resources that have been retained by the module
-	[super dealloc];
+	// [super dealloc];
 }
 
 #pragma mark Internal Memory Management
@@ -82,25 +82,6 @@
 		// been removed, we can optionally clean up any resources
 		// since no body is listening at this point for that event
 	}
-}
-
-#pragma Public APIs
-
--(id)example:(id)args
-{
-	// example method
-	return @"hello world";
-}
-
--(id)exampleProp
-{
-	// example property getter
-	return @"hello world";
-}
-
--(void)setExampleProp:(id)value
-{
-	// example property setter
 }
 
 @end

@@ -2,12 +2,12 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 0.2
+version: 0.3
 apiversion: 2
-description: Titanium Extend Module for TiUIWebView
+description: TiUIWebView extend module for iOS with Titanium 3.2 +
 author: Ryutaro Miyashita
 license: MIT
-copyright: Copyright (c) 2013 by Ryutaro Miyashita
+copyright: Copyright (c) 2014 by Ryutaro Miyashita
 
 
 # these should not be edited
@@ -15,4 +15,4 @@ name: TiExtendWeb
 moduleid: net.imthinker.modules.tiextendweb
 guid: 94e44513-dc7c-4c81-a148-c85d990c2090
 platform: iphone
-minsdk: 3.1.0.GA
+minsdk: 3.2.0.GA
