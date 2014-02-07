@@ -30,8 +30,6 @@
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
 		BD4420171747795C0036737C /* TiUIWebView+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = BD4420131747795C0036737C /* TiUIWebView+Extend.h */; };
 		BD4420181747795C0036737C /* TiUIWebView+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4420141747795C0036737C /* TiUIWebView+Extend.m */; };
-		BD4420191747795C0036737C /* TiUIWebViewProxy+Extend.h in Headers */ = {isa = PBXBuildFile; fileRef = BD4420151747795C0036737C /* TiUIWebViewProxy+Extend.h */; };
-		BD44201A1747795C0036737C /* TiUIWebViewProxy+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4420161747795C0036737C /* TiUIWebViewProxy+Extend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +52,6 @@
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BD4420131747795C0036737C /* TiUIWebView+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TiUIWebView+Extend.h"; path = "Classes/TiUIWebView+Extend.h"; sourceTree = "<group>"; };
 		BD4420141747795C0036737C /* TiUIWebView+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TiUIWebView+Extend.m"; path = "Classes/TiUIWebView+Extend.m"; sourceTree = "<group>"; };
-		BD4420151747795C0036737C /* TiUIWebViewProxy+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "TiUIWebViewProxy+Extend.h"; path = "Classes/TiUIWebViewProxy+Extend.h"; sourceTree = "<group>"; };
-		BD4420161747795C0036737C /* TiUIWebViewProxy+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "TiUIWebViewProxy+Extend.m"; path = "Classes/TiUIWebViewProxy+Extend.m"; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libNetImthinkerModulesTiextendweb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNetImthinkerModulesTiextendweb.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,8 +99,6 @@
 			children = (
 				BD4420131747795C0036737C /* TiUIWebView+Extend.h */,
 				BD4420141747795C0036737C /* TiUIWebView+Extend.m */,
-				BD4420151747795C0036737C /* TiUIWebViewProxy+Extend.h */,
-				BD4420161747795C0036737C /* TiUIWebViewProxy+Extend.m */,
 				24DE9E0F11C5FE74003F90F6 /* NetImthinkerModulesTiextendwebModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* NetImthinkerModulesTiextendwebModuleAssets.m */,
 				24DD6CF71134B3F500162E58 /* NetImthinkerModulesTiextendwebModule.h */,
@@ -133,7 +127,6 @@
 				24DD6CF91134B3F500162E58 /* NetImthinkerModulesTiextendwebModule.h in Headers */,
 				24DE9E1111C5FE74003F90F6 /* NetImthinkerModulesTiextendwebModuleAssets.h in Headers */,
 				BD4420171747795C0036737C /* TiUIWebView+Extend.h in Headers */,
-				BD4420191747795C0036737C /* TiUIWebViewProxy+Extend.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +203,6 @@
 				24DD6CFA1134B3F500162E58 /* NetImthinkerModulesTiextendwebModule.m in Sources */,
 				24DE9E1211C5FE74003F90F6 /* NetImthinkerModulesTiextendwebModuleAssets.m in Sources */,
 				BD4420181747795C0036737C /* TiUIWebView+Extend.m in Sources */,
-				BD44201A1747795C0036737C /* TiUIWebViewProxy+Extend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
