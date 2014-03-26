@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>4A92516C-A0BA-4CB4-B8F2-88500E9F6172</string>
+	<string>7AAA4B14-01FD-4131-9033-77B12BE302A5</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TiExtendWeb</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>43C692ED-AD9F-4435-8CCC-92ADA3776747</key>
-		<string>https://github.com/ryugoo/TiExtendWeb.git</string>
+		<key>F3B167CC-1FAC-408E-A37A-E3C1CDCFC289</key>
+		<string>ssh://github.com/k0sukey/TiExtendWeb.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TiExtendWeb.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>43C692ED-AD9F-4435-8CCC-92ADA3776747</key>
+		<key>F3B167CC-1FAC-408E-A37A-E3C1CDCFC289</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/ryugoo/TiExtendWeb.git</string>
+	<string>ssh://github.com/k0sukey/TiExtendWeb.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>43C692ED-AD9F-4435-8CCC-92ADA3776747</string>
+	<string>F3B167CC-1FAC-408E-A37A-E3C1CDCFC289</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>43C692ED-AD9F-4435-8CCC-92ADA3776747</string>
+			<string>F3B167CC-1FAC-408E-A37A-E3C1CDCFC289</string>
 			<key>IDESourceControlWCCName</key>
-			<string>TiExtendWeb</string>
+			<string>TiExtendWeb.k0sukey</string>
 		</dict>
 	</array>
 </dict>
