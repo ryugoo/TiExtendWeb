@@ -46,6 +46,13 @@
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
 {
     NSURL *requestURL = [request URL];
+    
+    if ([self.proxy _hasListeners:@"beforeload"])
+	{
+		NSDictionary *event = requestURL == nil ? nil : [NSDictionary dictionaryWithObjectsAndKeys:[requestURL absoluteString], @"url", NUMINT(navigationType), @"navigationType", nil];
+		[self.proxy fireEvent:@"beforeload" withObject:event];
+	}
+    
     NSString *scheme = [[requestURL scheme] lowercaseString];
     NSString *path = [requestURL path];
     if([path hasPrefix:@"/"]) {

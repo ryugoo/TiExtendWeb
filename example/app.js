@@ -16,6 +16,9 @@
         removeShadow: true,
         removeScrollDelay: true
     });
+    web.addEventListener('beforeload', function () {
+        console.debug('Fire WebView 1 beforeload event');
+    });
     web.addEventListener('load', function () {
         console.debug('Fire WebView 1 load event');
     });
@@ -37,7 +40,7 @@
         removeShadow: false,
         removeScrollDelay: false
     });
-    web.addEventListener('load', function () {
+    web2.addEventListener('load', function () {
         console.debug('Fire WebView 2 load event');
     });
     win2.add(web2);
@@ -66,7 +69,7 @@
         });
         dialog.show();
     });
-    web.addEventListener('load', function () {
+    web3.addEventListener('load', function () {
         console.debug('Fire WebView 3 load event');
     });
     win3.add(web3);
@@ -88,7 +91,7 @@
         removeScrollDelay: true,
         userAgentForiOS: 'TiExtendWeb Demo Application'
     });
-    web.addEventListener('load', function () {
+    web4.addEventListener('load', function () {
         console.debug('Fire WebView 4 load event');
     });
     win4.add(web4);
